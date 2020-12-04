@@ -1,0 +1,140 @@
+.btn-calculate {
+  background: #FBB040;
+  color: #40434A;
+  border: 1px #FBB040 solid;
+  border-radius: 20px;
+  margin: 0 15px;
+  width: 125px;
+  height: 35px;
+  &:hover {
+    background: transparent;
+    color: #FBB040;
+  }
+
+  &:disabled {
+    background: transparent;
+    color: #FBB040;
+  }
+
+}
+
+
+.span_name {
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+.simulation-result-table {
+  display: flex;
+
+  & .labels {
+    width: 210px;
+    color: #fff;
+    font-size: 12px;
+
+    & div {
+      margin: 5px 0;
+      align-items: center;
+      position: relative;
+    }
+
+    & .head-style {
+      height: 34px;
+      display: flex;
+      position: relative;
+      width: 160px;
+
+      & label {
+        //border-right: none;
+        padding: 8px;
+        margin-bottom: 0;
+        width: 100%;
+        position: relative;
+      }
+
+
+      & svg {
+        position: absolute;
+      }
+
+
+
+    }
+
+
+    & .data-style {
+      height: 56px;
+      display: flex;
+      position: relative;
+      width: 160px;
+
+      & label {
+        padding: 20px 8px;
+        margin-bottom: 0;
+        width: 100%;
+        position: relative;
+      }
+
+      & svg {
+        position: absolute;
+      }
+
+    }
+
+  }
+
+
+    & .results {
+      width: 100%;
+      color: #fff;
+      font-size: 12px;
+      margin-right: 20px;
+
+
+      & div {
+        margin: 5px 0;
+        justify-content: space-evenly;
+      }
+
+      & .head-style {
+        height: 34px;
+        display: flex;
+        border: 1px #4285F4 solid;
+        align-items: center;
+
+        & span {
+
+        }
+
+      }
+
+
+      & .data-style {
+        height: 56px;
+        display: flex;
+        background: rgba(134,147,201,0.12);
+        border: 1px rgba(112,112,112,0.12) solid;
+        align-items: center;
+
+        &.first-style {
+          background: rgba(134,147,201,0.12);
+          border: 1px rgba(112,112,112,0.12) solid;
+        }
+        &.second-style {
+          background: rgba(145,185,251,0.17);
+          border: 1px rgba(112,112,112,0.17) solid;
+        }
+
+
+        & span {
+
+        }
+
+
+      }
+
+  }
+
+}

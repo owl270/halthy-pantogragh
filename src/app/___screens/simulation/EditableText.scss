@@ -1,0 +1,16 @@
+.__input_group {
+
+}
+
+.__input_line {
+  stroke-width: 1;
+  stroke:rgb(112, 112, 112);
+
+  &.focused{
+    stroke:rgb(66, 133, 244);
+  }
+
+  &.disabled{
+    stroke: rgba(112, 112, 112, 0.35);
+  }
+}

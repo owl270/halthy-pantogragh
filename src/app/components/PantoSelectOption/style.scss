@@ -1,0 +1,105 @@
+.panto-select-option-area{
+  margin: 10px 0;
+  position: relative;
+
+  &.active{
+    & .panto-select-option-btn-container{
+      border-bottom: 2px solid #4285F4;
+    }
+
+    & .panto-select-option-list {
+      display: block;
+    }
+  }
+
+
+  & .panto-select-option-btn-container{
+    border-bottom: 2px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5px 2.5px;
+    height: 100%;
+
+    & label{
+      margin: 0;
+      flex: 1
+    }
+
+
+    & .bs-caret{
+      position: relative;
+
+      & .caret{
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        left: -8px;
+      }
+
+    }
+  }
+
+
+
+
+
+  & .panto-select-option-list{
+    position: absolute;
+    top: 31px;
+    background: #707070;
+    z-index: 9999;
+    width: 100%;
+    min-width: 200px;
+    max-height: 200px;
+    display: none;
+
+    & ul{
+      margin: 0;
+      list-style-type: none;
+
+      & li {
+        padding: 5px 0 5px 20px;;
+        color: #4285f4;
+        transition: .4s background-color;
+        cursor: pointer;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.selected {
+          background-color: rgba(0, 0, 0, 0.25);
+
+          &:before{
+            content: '';
+            border-right: 2px solid #4285F4;
+            border-bottom: 2px solid #4285F4;
+            top: 7px;
+            left: 9px;
+            width: 6px;
+            height: 12px;
+            transform: rotate(45deg) scale(1);
+            position: absolute;
+          }
+
+        }
+
+        &.disabled {
+          background-color: rgba(253, 0, 0, 0.25);
+        }
+
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.25);
+        }
+
+      }
+
+    }
+  }
+
+}

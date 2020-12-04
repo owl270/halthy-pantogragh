@@ -1,0 +1,5 @@
+<svg id="Icon_Real-Time" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
+  <rect id="Rectangle" width="21" height="12" rx="6" transform="translate(0 8)" fill="#4285f4" opacity="0.5"/>
+  <circle id="Oval" cx="10" cy="10" r="10" transform="translate(4)" fill="#4285f4"/>
+  <path id="Path_7" data-name="Path 7" d="M7,7H0V0" transform="translate(13 4)" fill="none" stroke="#383a3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+</svg>

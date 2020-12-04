@@ -1,0 +1,75 @@
+.panto-card {
+  background: #40434A;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+
+  & .panto-card-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    height: 100%;
+
+    & h4,h6 {
+      color: white !important;
+    }
+
+    & header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 5px;
+
+      & h4,h6 {
+        color: white !important;
+        margin: 0;
+      }
+
+
+      & .align-left {
+        align-items: flex-start;
+      }
+
+      & .align-right {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+
+
+
+.loading-path {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+
+  & .loading-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #40434ab8;
+  }
+
+
+  & .loading-text {
+    color: #ffffff59;
+    z-index: 9;
+    font-size: 20px;
+  }
+  & .spinner-grow {
+    z-index: 9;
+  }
+
+}

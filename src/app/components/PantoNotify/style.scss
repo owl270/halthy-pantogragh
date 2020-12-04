@@ -1,0 +1,89 @@
+.panto-notification, .notify-bar {
+  padding: 10px 20px;
+  font-size: 13px;
+  background: #fb483a;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 7px 9px;
+  min-width: 200px;
+  text-align: center;
+  transition: all 0.5s ease-in-out 0s;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+
+  &.error,.danger{
+    background: #fb483a;
+  }
+
+  &.success{
+    background: #2b982b;
+  }
+
+  &.warning{
+    background: #ff9600;
+  }
+
+  &.info{
+    background: #00b0e4;
+  }
+
+  & .close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    opacity: 1;
+  }
+
+
+
+
+}
+
+
+
+.panto-notification {
+  &.rendered {
+    animation: bounceIn;
+    animation-duration: .8s;
+  }
+
+  &.dismiss {
+    animation: bounceOut;
+    animation-duration: .8s;
+  }
+
+
+  &.emphasize {
+    animation: tada;
+    animation-duration: .8s;
+  }
+
+  &:before {
+    content: '';
+    width: var(--percent-progress);
+    height: 3px;
+    background: #ffffffa3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s;
+  }
+}
+
+
+.notify-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  //transition: 0.4s transform;
+}
+
+
+
+
+
+

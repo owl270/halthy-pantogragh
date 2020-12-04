@@ -1,0 +1,151 @@
+.calendar {
+  width: 230px;
+  overflow: hidden;
+
+
+  & .calendar-day-view {
+
+    & .calendar-header {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      & .next-prev-control {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+          background: #ffffff24;
+        }
+
+        &:active {
+          background: #ffffff47;
+        }
+
+        & i {
+          height: 20px;
+
+        }
+      }
+
+      & span.calendar-month-year {
+        font-weight: 900;
+        font-size: 16px;
+        color: #FFFFFF;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+
+
+    }
+
+
+    & .calendar-body {
+      margin-top: 15px;
+      transition: transform .5s;
+
+      & .calendar-days-rows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 224px;
+
+
+        & div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          & span {
+            height: 32px;
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #B6BEC6;
+            font-size: 15px;
+            //transition: background-color .3s, color .3s, font-weight .3s;
+            position: relative;
+          }
+
+        }
+
+        & .calendar-weeks-name {
+          & span {
+            color: #7A7F85;
+          }
+        }
+
+        & .calendar-days {
+          & span {
+            color: #B6BEC6;
+            cursor: pointer;
+            border-radius: 50%;
+
+
+            &.in-range {
+              color: #FFFFFF;
+              font-weight: 800;
+              background: rgba(66, 133, 244, 0.34);
+              border-radius: 0;
+
+              &.selected {
+                background: #4285F4;
+                transform-style: preserve-3d;
+                border-radius: 50%;
+
+
+                &.hover{
+                  background: #456399;
+                }
+
+                &:after {
+                  content: '';
+                  position: absolute;
+                  background: rgba(66, 133, 244, 0.34);
+                  width: 50%;
+                  height: 100%;
+                  transform: translateZ(-1px);
+                  display: none;
+                }
+
+                &.first-day {
+                  &:after {
+                    right: 0;
+                    display: flex;
+                  }
+                }
+
+                &.last-day {
+                  &:after {
+                    left: 0;
+                    display: flex;
+                  }
+                }
+
+              }
+
+            }
+          }
+
+
+        }
+
+      }
+
+    }
+
+  }
+}

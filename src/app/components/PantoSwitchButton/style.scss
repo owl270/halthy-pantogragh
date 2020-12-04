@@ -1,0 +1,107 @@
+
+
+
+
+.panto-switch-btn-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  & label {
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 0;
+  }
+
+  & .panto-switch-btn-container {
+    background-color: #818181;
+    width: 35px;
+    height: 12px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .2s;
+
+    & .panto-switch-toggle {
+      background-color: #ffffff;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      transition: all .2s;
+      position: absolute;
+      left: 0;
+    }
+
+
+    &.active {
+      background-color: #396DC2;
+      .panto-switch-toggle {
+        background: #4285F4;
+        transform: translateX(calc(100% + 4px));
+      }
+    }
+
+    &.disabled {
+      background-color: #818181;
+      .panto-switch-toggle {
+        background: #BDBDBD;
+        transform: translateX(0);
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+.panto-stock-switch-btn-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & label{
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 0;
+  }
+
+  & .panto-switch-btn-container {
+    border: 1.5px solid #4285f4;
+    width: 30px;
+    height: 16px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    & .panto-switch-toggle {
+      width: 9.5px;
+      height: 9.5px;
+      border-radius: 25px;
+      border: 1.5px solid #4285f4;
+      transition: left .2s, background-color .2s;
+      position: absolute;
+      left: 2px;
+    }
+
+
+    &.active {
+      .panto-switch-toggle {
+        background: #4285f4;
+        left: 15.5px;
+      }
+
+    }
+
+  }
+
+}
+

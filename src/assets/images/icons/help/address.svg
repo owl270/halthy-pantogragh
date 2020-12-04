@@ -1,0 +1,22 @@
+<svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.688 23.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3d6099;
+      }
+
+      .cls-2 {
+        fill: #4285f4;
+      }
+    </style>
+  </defs>
+  <g id="Group_503" data-name="Group 503" transform="translate(11.56 6.422)">
+    <path id="Path_2118" data-name="Path 2118" class="cls-1" d="M44,32H56.844V47.413H44Z" transform="translate(-44 -32)"/>
+  </g>
+  <path id="Path_2119" data-name="Path 2119" class="cls-2" d="M8,12V35.12H20.844V12Zm5.138,5.138H10.569V14.569h2.569Zm5.138,0H15.707V14.569h2.569Zm-5.138,5.138H10.569V19.707h2.569Zm5.138,0H15.707V19.707h2.569Zm-5.138,5.138H10.569V24.844h2.569Zm5.138,0H15.707V24.844h2.569Zm-5.138,5.138H10.569V29.982h2.569Zm5.138,0H15.707V29.982h2.569Z" transform="translate(-8 -12)"/>
+  <path id="Path_2120" data-name="Path 2120" class="cls-2" d="M48,28v2.569H58.275V43.413H48v2.569H60.844V28Z" transform="translate(-35.156 -22.862)"/>
+  <path id="Path_2121" data-name="Path 2121" class="cls-2" d="M44,44h3.853v2.569H44Z" transform="translate(-32.44 -33.725)"/>
+  <path id="Path_2122" data-name="Path 2122" class="cls-2" d="M44,60h3.853v2.569H44Z" transform="translate(-32.44 -44.587)"/>
+  <path id="Path_2123" data-name="Path 2123" class="cls-2" d="M64,44h2.569v2.569H64Z" transform="translate(-46.018 -33.725)"/>
+  <path id="Path_2124" data-name="Path 2124" class="cls-2" d="M64,60h2.569v2.569H64Z" transform="translate(-46.018 -44.587)"/>
+</svg>

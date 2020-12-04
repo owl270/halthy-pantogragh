@@ -1,0 +1,36 @@
+.login-form-popup {
+  padding: 25px 100px;
+
+  & .alert-message{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & span {
+      color: #F44336;
+    }
+  }
+
+  & .panto-button {
+    height: 35px;
+  }
+}
+
+.login-popup-header {
+  display: flex;
+  justify-content: flex-end;
+
+  & .login-popup-logo {
+    & img {
+      width: 130px;
+    }
+  }
+
+  & b {
+    color: white;
+    padding-left: 5px;
+  }
+
+}

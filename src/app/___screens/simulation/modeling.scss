@@ -1,0 +1,44 @@
+.modeling-body {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.add_dropper_btn {
+  cursor: pointer;
+  transition: all 1s;
+  -moz-transition: all 1s;
+
+  & rect {
+    fill: #4285F4;
+    transition: all 1s;
+    rx: 10px
+  }
+
+
+  &:hover rect {
+    opacity: 0.8;
+  }
+
+}
+
+
+
+.dropper{
+  fill: #ffffff;
+  cursor: pointer;
+
+  &:hover{
+    fill: #ff1e34;
+  }
+}
+
+
+svg {
+  min-height: 450px;
+}

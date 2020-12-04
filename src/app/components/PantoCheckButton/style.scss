@@ -1,0 +1,165 @@
+.panto-check-btn-area{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .panto-check-btn-container{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    z-index: 0;
+
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      transform: scale(1);
+      transition: .4s ease-out;
+      border: 1px solid #4285F4;
+    }
+
+    &:after {
+      background-color: #4285F4;
+      transform: scale(0);
+    }
+
+    &.active {
+      &:after {
+        transform: scale(1);
+      }
+
+      & .panto-check-toggle-container {
+        & .panto-check-toggle {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+
+    &.some {
+      &:after {
+        transform: scale(1);
+      }
+
+      & .panto-check-toggle-container {
+        & .panto-check-toggle {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+
+    & .panto-check-toggle-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+
+      & .panto-check-toggle {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        &:before {
+          content: '';
+          border-right: 3px solid #FFFFFF;
+          border-bottom: 3px solid #FFFFFF;
+          width: calc(100% - 10px);
+          height: calc(100% - 4px);
+          transform: rotate(-315deg) translate(calc(-50% + 1px + 2px), calc(-50% + 1px + 4px));
+          transition: .4s ease-out;
+          position: absolute;
+          opacity: 0;
+        }
+
+        &:after {
+          content: '';
+          border: none;
+          width: calc(100% - 7px);
+          border-bottom: 3px solid #FFFFFF;
+          transition: .4s ease-out;
+          position: absolute;
+          opacity: 0;
+        }
+
+
+
+
+
+      }
+
+
+    }
+
+
+
+
+    //
+    //
+    //& .panto-some-toggle {
+    //  border-bottom: 2px solid #FFFFFF;
+    //  top: -3px;
+    //  left: 3px;
+    //  width: 7.5px;
+    //  height: 10px;
+    //  transform: scaleX(0);
+    //  position: absolute;
+    //  transition: transform .25s ease-out .1s;
+    //}
+    //
+    //
+    //
+    //
+    //
+    //&.some {
+    //  & .panto-some-toggle {
+    //    transform: scaleX(1);
+    //  }
+    //  &:before {
+    //    transform: scale(1);
+    //  }
+    //}
+    //
+    //
+    //&.active {
+    //  &:before {
+    //    transform: scale(1);
+    //  }
+    //  & .panto-check-toggle{
+    //    transform: scale(1) rotate(45deg) ;
+    //  }
+    //}
+    //
+
+  }
+
+  & label{
+    color: #B0B4C3;
+    font-size: 12px;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+  }
+
+
+}
+
+
+
+
+
+

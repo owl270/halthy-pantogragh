@@ -1,0 +1,197 @@
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+html, body, #panto-root {
+  min-height: 100% !important;
+  height: 100%;
+  line-height: 1.5;
+}
+
+#panto-root {
+  overflow-y: hidden;
+
+
+  & .login-page-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 1500px;
+  }
+
+}
+
+#panto-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(64, 67, 74, 0.91));
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+  display: none;
+  transition: opacity 1s;
+
+
+  &.rendered {
+    display: block;
+    opacity: 1;
+  }
+
+}
+
+
+.panto-development {
+  position: absolute;
+  z-index: 9;
+  color: white;
+  font-weight: 900;
+  background: red;
+  padding: 0 10px;
+
+  &:after {
+    content: 'Development version'
+  }
+}
+
+
+#panto-modals {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#panto-notifications {
+  display: flex;
+  position: fixed;
+  right: 0;
+  flex-direction: column;
+  bottom: 0;
+  max-width: 300px;
+  z-index: 99;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+body {
+  font-family: $theme-font-family;
+  font-size: $theme-font-size;
+  color: $theme-font-color;
+  font-weight: 400;
+  position: relative;
+  background-color: $theme-background;
+  height: 100%;
+  user-select: none;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: #91B9FB;
+  width: fit-content;
+
+  &:hover {
+    color: #82affa;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline-width: 0;
+}
+
+label {
+  transition: .4s color;
+}
+
+label.disabled {
+  color: #71737A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 400;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $theme-font-color;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $theme-font-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $theme-font-color;
+}
+
+
+.hide-scrollbar > div:first-child > div:first-child {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

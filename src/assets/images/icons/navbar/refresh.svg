@@ -1,0 +1,8 @@
+<svg id="Insights_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22">
+  <g id="Group_3" data-name="Group 3">
+    <path id="Combined_Shape" data-name="Combined Shape" d="M11,22A11,11,0,0,1,0,11.066l1.241.553a9.778,9.778,0,0,0,18.812,3.073l1.122.5A11.026,11.026,0,0,1,11,22ZM21.987,11.538h0L20.777,11A9.778,9.778,0,0,0,1.749,7.831L.624,7.33A11.023,11.023,0,0,1,11,0,11,11,0,0,1,22,11c0,.178,0,.359-.013.537Z" transform="translate(1)" fill="#8f98ab"/>
+    <circle id="Oval" cx="2" cy="2" r="2" transform="translate(20 9)" fill="#8f98ab"/>
+    <circle id="Oval_Copy_65" data-name="Oval Copy 65" cx="4" cy="4" r="4" transform="translate(8 7)" fill="#6d7381" opacity="0.5"/>
+    <circle id="Oval_Copy_64" data-name="Oval Copy 64" cx="2" cy="2" r="2" transform="translate(0 9)" fill="#8f98ab"/>
+  </g>
+</svg>

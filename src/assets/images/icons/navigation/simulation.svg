@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 22">
+  <g id="Icon_Behavior" transform="translate(0 -0.1)">
+    <g id="Rectangle_Copy_61" data-name="Rectangle Copy 61" transform="translate(0 0.1)" fill="none" stroke="#4285f4" stroke-miterlimit="10" stroke-width="3" opacity="0.5">
+      <rect width="26" height="22" stroke="none"/>
+      <rect x="1.5" y="1.5" width="23" height="19" fill="none"/>
+    </g>
+    <path id="Path_11" data-name="Path 11" d="M.5.5" transform="translate(20.3 8.6)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M0,16V0H3.9V6.667H13v9.1H3.9V16Z" transform="translate(7 0.1)" fill="#4285f4"/>
+    <rect id="Rectangle" width="3" height="9" transform="translate(4 0.1)" fill="#383a3f"/>
+  </g>
+</svg>

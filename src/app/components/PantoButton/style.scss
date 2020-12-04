@@ -1,0 +1,52 @@
+button.panto-button{
+  background-color: #4285F4;
+  border-radius: 25px;
+  border: 1px solid #4285F4;
+  box-shadow: none;
+  color: white;
+  height: 25px;
+  padding: 0 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.5s background-color, 0.5s color;
+
+
+  &:not([disabled]):hover{
+    background-color: transparent;
+  }
+
+  &[disabled]{
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+
+  &.outline{
+    background-color: transparent;
+    &:not([disabled]):hover{
+      background-color: #4285F4;
+    }
+
+    &[disabled]{
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+
+
+
+  & a {
+    color: white;
+    transition: 0.5s color;
+  }
+
+
+  &:hover {
+    & a {
+      color: #4285F4;
+    }
+  }
+
+
+
+
+}

@@ -1,0 +1,197 @@
+.panto-icon {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.ph-search {
+    background-image: url(../images/icons/navbar/search.svg);
+  }
+  &.ph-arrow-down {
+    background-image: url(../images/icons/navbar/arrow_down.svg);
+  }
+  &.ph-notifications {
+    background-image: url(../images/icons/navbar/notifications.svg);
+  }
+  &.ph-refresh {
+    background-image: url(../images/icons/navbar/refresh.svg);
+  }
+
+  &.ph-show-icon {
+    background-image: url(../images/icons/login/eye.svg);
+  }
+
+  &.ph-hide-icon {
+    background-image: url(../images/icons/login/eye.svg);
+  }
+
+  &.ph-home {
+    background-image: url(../images/icons/navigation/home.svg);
+  }
+  &.ph-customization {
+    background-image: url(../images/icons/navigation/customization.svg);
+  }
+
+  &.ph-points {
+    background-image: url(../images/icons/navigation/points.svg);
+  }
+  &.ph-ways {
+    background-image: url(../images/icons/navigation/ways.svg);
+  }
+  &.ph-pantographs {
+    background-image: url(../images/icons/navigation/report.svg);
+  }
+
+  &.ph-simulation {
+    background-image: url(../images/icons/navigation/simulation.svg);
+  }
+  &.ph-supervision {
+    background-image: url(../images/icons/navigation/supervision.svg);
+  }
+  &.ph-triggers {
+    background-image: url(../images/icons/navigation/triggers.svg);
+  }
+
+  &.ph-settings {
+    background-image: url(../images/icons/navigation/settings.svg);
+  }
+  &.ph-help {
+    background-image: url(../images/icons/navigation/help.svg);
+  }
+
+  &.ph-section {
+    background-image: url(../images/icons/navigation/section.svg);
+  }
+  &.ph-report {
+    background-image: url(../images/icons/navigation/report.svg);
+  }
+
+  &.ph-plus-radius {
+    background-image: url(../images/icons/plus-radius.svg);
+  }
+
+  &.ph-plus {
+    background-image: url(../images/icons/plus.svg);
+  }
+
+  &.ph-dismiss {
+    background-image: url(../images/icons/dismiss.svg);
+  }
+
+  &.ph-menu-arrow-down {
+    background-image: url(../images/icons/arrow_open_menu.svg);
+  }
+
+  &.ph-chart {
+    background-image: url(../images/icons/chart.svg);
+  }
+
+  &.ph-list-caret {
+    background-image: url(../images/icons/selectList-caret.svg);
+  }
+
+  &.ph-video-player-play-item {
+    background-image: url(../images/icons/video_player/player-play-item.svg);
+  }
+
+  &.ph-video-player-5m-forward {
+    background-image: url(../images/icons/video_player/player-5m-forward.svg);
+  }
+
+  &.ph-video-player-5m-backward {
+    background-image: url(../images/icons/video_player/player-5m-backward.svg);
+  }
+
+  &.ph-video-player-play {
+    background-image: url(../images/icons/video_player/player-play.svg);
+  }
+
+  &.ph-video-player-pause {
+    background-image: url(../images/icons/video_player/player-pause.svg);
+  }
+
+  &.ph-right-arrow {
+    background-image: url(../images/icons/right-arrow.svg);
+  }
+
+  &.ph-left-arrow {
+    background-image: url(../images/icons/left-arrow.svg);
+  }
+
+  &.ph-email {
+    background-image: url(../images/icons/help/e-mail.svg);
+  }
+  &.ph-telephone {
+    background-image: url(../images/icons/help/telephone.svg);
+  }
+  &.ph-address {
+    background-image: url(../images/icons/help/address.svg);
+  }
+
+
+  &.ph-red-shock{
+    background-image: url(../images/icons/setting/red-shock.svg);
+  }
+
+  &.ph-yellow-shock-bg{
+    background-image: url(../images/icons/setting/yellow-shock.svg);
+  }
+  &.ph-white-shock-bg {
+    background-image: url(../images/icons/setting/white-shock.svg);
+  }
+  &.ph-white-height-bg{
+    background-image: url(../images/icons/setting/white-height-bg.svg);
+  }
+  &.ph-setting{
+    background-image: url(../images/icons/setting/setting.svg);
+  }
+  &.ph-recyclebin{
+    background-image: url(../images/icons/setting/recyclebin.svg);
+  }
+
+  &.ph-red-height{
+    background-image: url(../images/icons/setting/red-height.svg);
+  }
+  &.ph-yellow-height{
+    background-image: url(../images/icons/setting/yellow-height.svg);
+  }
+  &.ph-white-height{
+    background-image: url(../images/icons/setting/white-height.svg);
+  }
+  &.ph-red-zig-zog{
+    background-image: url(../images/icons/setting/red-zig-zog.svg);
+  }
+  &.ph-yellow-zig-zog {
+    background-image: url(../images/icons/setting/yellow-zig-zog.svg);
+  }
+  &.ph-white-zig-zog {
+    background-image: url(../images/icons/setting/white-zig-zog.svg);
+  }
+
+
+
+  &.ph-icon-ttb {
+    transform: rotate(180deg);
+  }
+  &.ph-icon-btt {
+    transform: rotate(180deg);
+  }
+
+  &.ph-icon-rtl {
+    transform: rotate(90deg);
+  }
+
+  &.ph-icon-ltr {
+    transform: rotate(-90deg);
+  }
+
+  &.ph-icon-xs {
+    width: 5px;
+    height: 5px;
+  }
+
+  &.ph-icon-sm {
+    width: 10px;
+    height: 10px;
+  }
+}

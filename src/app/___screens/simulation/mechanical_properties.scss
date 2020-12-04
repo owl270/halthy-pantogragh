@@ -1,0 +1,315 @@
+.mechanical-properties{
+  padding: 15px;
+}
+
+
+.panto-modal {
+
+  & .input-group{
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    & label{
+      width: 200px;
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+
+    & input {
+      background: none;
+      border: none;
+      border-bottom: 1.2px solid #707070;
+      width: 60px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      transition: border-bottom-color .3s;
+      &:disabled {
+        color: #919191 !important;
+        cursor: not-allowed;
+      }
+
+      &:focus{
+        border-bottom: 1.2px solid #4285f4;
+      }
+
+    }
+
+
+    &.has-error{
+
+      & input {
+
+        //&:focus {
+          border-bottom: 1.2px solid #dc3545;
+        //}
+
+      }
+
+    }
+
+  }
+
+
+  & .mechanical-properties-modal-body{
+    display: flex;
+    flex-direction: column;
+
+
+
+    .load_dynamic_response_btn {
+      background: #4285f4;
+      padding: 10px;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color .5s;
+      margin-top: 18px;
+
+      &:hover{
+        background: #ffffff;
+
+        & label{
+          color: #4285f4;
+        }
+      }
+
+
+      & label{
+        color: #fff;
+        margin-bottom: 0;
+        width: 95px;
+        padding-left: 10px;
+        font-weight: 600;
+        transition: color .5s;
+        cursor: pointer;
+      }
+
+
+    }
+
+
+    & .button-group{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-top: 15px;
+
+
+
+
+      & button {
+        background: #4285F4;
+        border: 1px solid #4285F4;
+        border-radius: 15px;
+        color: #fff;
+        margin: 0 0 0 10px;
+        padding: 3px 15px;
+
+        &:hover{
+          opacity: 0.8;
+        }
+
+        &.cancel-btn {
+          background: transparent;
+          border: 1px solid #4285F4;
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+  &.panto-modal-messenger_wire_support {
+
+
+    & .mechanical-properties-modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+
+    & .button{
+      display: flex;
+      align-self: flex-end;
+      flex-direction: column;
+    }
+
+    & .variables {
+      display: flex;
+      flex-direction: column;
+
+
+      & .input-group {
+        height: 35px;
+        display: flex;
+        align-items: center;
+
+        & label {
+          width: 150px;
+          margin-bottom: 0;
+          font-size: 12px;
+        }
+
+
+        & input {
+          width: 60px;
+        }
+
+      }
+
+    }
+    }
+
+  }
+
+
+
+  &.panto-modal-pantograph {
+
+
+    & .panto-modal-content {
+      width: 520px;
+    }
+
+
+    & .header-input-group{
+      display: flex;
+      flex-direction: row;
+
+
+      & label{
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      & input {
+        width: 60px;
+      }
+
+    }
+
+
+
+    & .mechanical-properties-modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+
+      & .variables{
+        display: flex;
+        flex-direction: column;
+
+        & .variable-group {
+          padding: 8px 0;
+
+
+          & .input-group {
+            height: 35px;
+            display: flex;
+            align-items: center;
+
+            & label {
+              width: 100px;
+              margin-bottom: 0;
+              font-size: 12px;
+            }
+
+
+            & input {
+              width: 35px;
+            }
+
+          }
+
+        }
+      }
+
+      & .model{
+        width: 27%;
+        padding: 20px 0;
+      }
+
+
+      & .button{
+        display: flex;
+        align-self: flex-end;
+        flex-direction: column;
+      }
+
+
+      & .error{
+        color: #ffffff;
+        text-align: center;
+        background: #dc3545ba;
+        font-size: 10px;
+        border-radius: 10px;
+        padding: 0 5px;
+        border: 1px solid #dc354563;
+        height: 18px;
+        width: 202px;
+        position: relative;
+        top: 0;
+      }
+
+    }
+
+
+  }
+
+
+}
+
+.mech-shape{
+  transition: all .3s;
+  fill: #ffffff;
+  cursor: pointer;
+
+
+  &.confirm {
+    fill: #557E6C;
+
+  }
+
+  &:hover {
+    fill: #FD9E58;
+  }
+
+
+  &.mech-shape-steady-arm {
+
+  }
+  &.mech-shape-pantograph {
+
+  }
+  &.mech-shape-contact-wire {
+
+  }
+  &.mech-shape-messenger-wire {
+
+  }
+  &.mech-shape-stitch-wire {
+
+  }
+  &.mech-shape-dropper {
+
+  }
+  &.mech-shape-messenger-wire-support {
+
+  }
+
+}
+
+
